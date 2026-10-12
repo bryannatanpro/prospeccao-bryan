@@ -426,6 +426,13 @@
     #se-tab-whatsapp { background:#dcfce7; border-color:#86efac; color:#166534; }
     #se-tab-whatsapp.active { background:#15803d; border-color:#15803d; color:#fff; }
     #se-tab-whatsapp:focus-visible { outline-color:#22c55e; }
+    /* Canal "Direct do Instagram": mensagens para copiar em rosa (no WhatsApp continuam verdes). */
+    #se-channel-instagram .bubble-row.right .bubble { background:#fce7f3; }
+    #se-channel-instagram .bubble-row.right .bubble::after { border-color:#fce7f3 transparent; }
+    #se-channel-instagram .bubble-row.right .bubble-label { color:#9d174d; }
+    #se-channel-instagram .copy-btn { border-color:#be185d; color:#be185d; }
+    #se-channel-instagram .copy-btn:hover { background:#be185d; border-color:#be185d; color:#fff; }
+    #se-channel-instagram .copy-btn.copied { background:#831843; border-color:#831843; color:#fff; }
   </style>
 </head>
 <body>
@@ -1039,6 +1046,37 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
                   <button class="copy-btn" onclick="copiar('se-sim2', this)">📋 Copiar</button>
                 </div>
               </div>
+              <div class="branch-choice">
+                <button type="button" class="branch-btn sim" aria-expanded="false" aria-controls="se-whatsapp-recebido" onclick="mostrarWhatsappRecebido(this)">✅ Cliente enviou o whatsapp</button>
+              </div>
+              <div id="se-whatsapp-recebido" class="caminho-panel">
+                <div class="chat-wrap">
+                  <div class="bubble-row right">
+                    <div class="bubble" id="se-recebido-msg1">Opaa tudo bem? Falo com o NOME da @usuariodaempresa?</div>
+                    <button class="copy-btn" onclick="copiar('se-recebido-msg1', this)">📋 Copiar</button>
+                  </div>
+                </div>
+                <div class="audio-card">
+                  <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 1</div>
+                  <div class="audio-script" id="se-recebido-audio1">Legal amigo! aqui é o Bryan, estava conversando com você a pouco pelo direct do insta sobre os anúncios aplicados na sua empresa de monitoramento.</div>
+                  <button class="copy-btn" onclick="copiar('se-recebido-audio1', this)">📋 Copiar</button>
+                </div>
+                <div class="audio-card">
+                  <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 2</div>
+                  <div class="audio-script" id="se-recebido-audio2">Já organizei por aqui, um material pra te passar com alguns dados rápidos da sua região pra te mostrar na prática como podemos estruturar a chegada de novos clientes recorrentes todos os dias aí pra você com aqueles vintão que conversamos.</div>
+                  <button class="copy-btn" onclick="copiar('se-recebido-audio2', this)">📋 Copiar</button>
+                </div>
+                <div class="audio-card">
+                  <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 3</div>
+                  <div class="audio-script" id="se-recebido-audio3">Mas seria muito melhor eu te apresentar isso por uma reunião online de 25/30 minutinhos, pra você ver na minha tela como funciona esse potencializador de vendas pra empresas de monitoramento como a sua.</div>
+                  <button class="copy-btn" onclick="copiar('se-recebido-audio3', this)">📋 Copiar</button>
+                </div>
+                <div class="audio-card">
+                  <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 4</div>
+                  <div class="audio-script" id="se-recebido-audio4">Vamos agendar esse nosso encontro? tenho alguns horários hoje, na parte da tarde ás x ou amanhã xy</div>
+                  <button class="copy-btn" onclick="copiar('se-recebido-audio4', this)">📋 Copiar</button>
+                </div>
+              </div>
             </div>
 
             <div id="se-inter-nao" class="caminho-panel inter-panel">
@@ -1315,6 +1353,11 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
     } finally {
       btn.disabled = false;
     }
+  }
+  function mostrarWhatsappRecebido(btn) {
+    document.getElementById('se-whatsapp-recebido').classList.add('active');
+    btn.classList.add('selected');
+    btn.setAttribute('aria-expanded', 'true');
   }
   function showSecurityChannel(channel) {
     ['instagram', 'whatsapp'].forEach(name => {
