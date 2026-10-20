@@ -433,6 +433,7 @@
     #se-channel-instagram .copy-btn { border-color:#be185d; color:#be185d; }
     #se-channel-instagram .copy-btn:hover { background:#be185d; border-color:#be185d; color:#fff; }
     #se-channel-instagram .copy-btn.copied { background:#831843; border-color:#831843; color:#fff; }
+  .etapa-etiqueta { display:inline-block; margin:18px 0 8px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; background:#c6f6d5; color:#276749; padding:4px 12px; border-radius:20px; }
   </style>
 </head>
 <body>
@@ -1188,6 +1189,7 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
 
     </div>
     <div id="se-channel-whatsapp" role="tabpanel" aria-labelledby="se-tab-whatsapp" hidden>
+      <div class="etapa-etiqueta">Etapa 1 — Abertura no WhatsApp</div>
       <div class="chat-wrap">
         <div class="bubble-row right">
           <div class="bubble" id="se-wa-1">Opaa, tudo bem?</div>
@@ -1208,24 +1210,27 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
         <button type="button" class="branch-btn nao" aria-expanded="false" aria-controls="se-wa-caminho-b" onclick="showWhatsAppCaminho('b', this)">❌ Não, aqui é a secretária/social media/agência</button>
       </div>
 <div id="se-wa-caminho-a" class="caminho-panel wa-caminho-panel">
-<div class="chat-wrap">
+<div class="etapa-etiqueta">Etapa 2 — Contexto do conteúdo</div>
+      <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-a1">Ahh legal! é que apareceu um conteúdo da sua empresa no meu Instagram sobre Monitoramento e achei muito bom os conteúdos que vocês trazem pros seus clientes por lá!</div><button class="copy-btn" onclick="copiar('se-wa-a1', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a2">Posso fazer uma pergunta rapidinho?</div><button class="copy-btn" onclick="copiar('se-wa-a2', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
-<div class="chat-wrap">
-<div class="bubble-row right"><div class="bubble" id="se-wa-a3">A minha dúvida era justamente porque vi que vocês já têm um posicionamento muito bom por lá...</div><button class="copy-btn" onclick="copiar('se-wa-a3', this)">📋 Copiar</button></div>
+<div class="etapa-etiqueta">Etapa 3 — Pergunta de diagnóstico</div>
+      <div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-wa-a3">Showw! A minha dúvida era justamente porque vi que vocês já têm um posicionamento muito bom por lá...</div><button class="copy-btn" onclick="copiar('se-wa-a3', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a4">Mas fiquei curioso em saber se isso tem atraído novos clientes/orçamentos ou o principal meio de ter novas vendas é por indicação mesmo?</div><button class="copy-btn" onclick="copiar('se-wa-a4', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
-<div class="chat-wrap">
+<div class="etapa-etiqueta">Etapa 4 — Oferta + perfil + investimento</div>
+      <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-a5">Te perguntei isso amigo, porque sou responsável por ajudar empresas de monitoramento como a sua</div><button class="copy-btn" onclick="copiar('se-wa-a5', this)">📋 Copiar</button></div>
 </div>
 <div class="chat-wrap">
-<div class="bubble-row right"><div class="bubble" id="se-wa-a-foto-legenda">Esse é o perfil do meu instagram:
-https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-a-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a6">Onde auxilio elas a implementarem uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios nas redes sociais</div><button class="copy-btn" onclick="copiar('se-wa-a6', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a7">Por menos de R$20,00 diário, geramos em média 150 novos contatos por mês da sua região pro comercial trabalhar.</div><button class="copy-btn" onclick="copiar('se-wa-a7', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-wa-a-foto-legenda">Esse é o perfil do meu instagram:
+https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-a-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a8">Você acredita que esse tipo de implementação em trazer volume de novos clientes ajudaria no momento atual da sua empresa NOME?</div><button class="copy-btn" onclick="copiar('se-wa-a8', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
@@ -1235,7 +1240,8 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 <button type="button" class="branch-btn nao" aria-expanded="false" aria-controls="se-wa-interest-nao" onclick="showWhatsAppInterest('nao', this)">❌ Se a resposta for NÃO</button>
 </div>
 <div id="se-wa-interest-sim" class="caminho-panel wa-interest-panel">
-<div class="chat-wrap">
+<div class="etapa-etiqueta">Etapa 5 — Convite para reunião</div>
+      <div class="chat-wrap">
 <div class="bubble-row right">
   <div class="bubble" id="se-wa-a-sim">Perfeito NOME! Que ótimo que você tem essa consciência!<br>Me conta, podemos agendar um encontro on-line de 25/30 minutinhos?</div>
   <button class="copy-btn" onclick="copiar('se-wa-a-sim', this)">📋 Copiar</button>
@@ -1261,7 +1267,7 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
 <div class="chat-wrap">
-<div class="bubble-row right"><div class="bubble" id="se-wa-b3">A minha dúvida era justamente porque vi que vocês já têm um posicionamento muito bom por lá...</div><button class="copy-btn" onclick="copiar('se-wa-b3', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-wa-b3">Showw! A minha dúvida era justamente porque vi que vocês já têm um posicionamento muito bom por lá...</div><button class="copy-btn" onclick="copiar('se-wa-b3', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b4">Mas fiquei curioso em saber se isso tem atraído novos clientes/orçamentos ou o principal meio de ter novas vendas é por indicação mesmo?</div><button class="copy-btn" onclick="copiar('se-wa-b4', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b-responsavel">É com você que converso sobre a parte de atração de novos clientes/vendas para @usuariodaempresa ou você pode passar o contato do responsável que cuida disso?😀</div><button class="copy-btn" onclick="copiar('se-wa-b-responsavel', this)">📋 Copiar</button></div>
 </div>
@@ -1274,10 +1280,10 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 <div class="bubble-row right"><div class="bubble" id="se-wa-b5">Te perguntei isso amigo, porque sou responsável por ajudar empresas de monitoramento como a sua</div><button class="copy-btn" onclick="copiar('se-wa-b5', this)">📋 Copiar</button></div>
 </div>
 <div class="chat-wrap">
-<div class="bubble-row right"><div class="bubble" id="se-wa-b-foto-legenda">Esse é o perfil do meu instagram:
-https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-b-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b6">Onde auxilio elas a implementarem uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios nas redes sociais</div><button class="copy-btn" onclick="copiar('se-wa-b6', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b7">Por menos de R$20,00 diário, geramos em média 150 novos contatos por mês da sua região pro comercial trabalhar.</div><button class="copy-btn" onclick="copiar('se-wa-b7', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-wa-b-foto-legenda">Esse é o perfil do meu instagram:
+https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-b-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b8">Você acredita que esse tipo de implementação em trazer volume de novos clientes ajudaria no momento atual da sua empresa NOME?</div><button class="copy-btn" onclick="copiar('se-wa-b8', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
