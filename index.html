@@ -1223,16 +1223,44 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
 <div class="etapa-etiqueta">Etapa 4 — Oferta + perfil + investimento</div>
-      <div class="chat-wrap">
-<div class="bubble-row right"><div class="bubble" id="se-wa-a5">Te perguntei isso amigo, porque sou responsável por ajudar empresas de monitoramento como a sua</div><button class="copy-btn" onclick="copiar('se-wa-a5', this)">📋 Copiar</button></div>
+      <div class="security-channels" role="tablist" aria-label="Forma de envio" style="margin:0 0 14px;justify-content:center">
+  <button type="button" class="security-channel-pill" id="se-a-tab-texto" role="tab" aria-selected="false" onclick="mostrarEnvioWa('se-a', 'texto', this)">💬 Enviar por texto</button>
+  <button type="button" class="security-channel-pill" id="se-a-tab-audio" role="tab" aria-selected="false" onclick="mostrarEnvioWa('se-a', 'audio', this)">🎙️ Enviar por áudio</button>
 </div>
+<div id="se-a-envio-texto" hidden>
+<div style="background:#fef3c7;border:1px solid #f6e05e;border-left:4px solid #d69e2e;border-radius:8px;padding:10px 14px;margin:0 0 10px;font-size:12.5px;line-height:1.5;color:#744210"><strong>⚠️ Atenção:</strong> elogie conforme a resposta que o lead der para a pergunta acima</div>
 <div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-wa-a5">Te perguntei isso amigo, porque sou responsável por ajudar empresas de monitoramento como a sua</div><button class="copy-btn" onclick="copiar('se-wa-a5', this)">📋 Copiar</button></div>
+
 <div class="bubble-row right"><div class="bubble" id="se-wa-a6">Onde auxilio elas a implementarem uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios nas redes sociais</div><button class="copy-btn" onclick="copiar('se-wa-a6', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a7">Por menos de R$20,00 diário, geramos em média 150 novos contatos por mês da sua região pro comercial trabalhar.</div><button class="copy-btn" onclick="copiar('se-wa-a7', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a-foto-legenda">Esse é o perfil do meu instagram:
 https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-a-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-a8">Você acredita que esse tipo de implementação em trazer volume de novos clientes ajudaria no momento atual da sua empresa NOME?</div><button class="copy-btn" onclick="copiar('se-wa-a8', this)">📋 Copiar</button></div>
 </div>
+</div>
+<div id="se-a-envio-audio" hidden>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 1</div>
+    <div class="audio-script" id="se-a-audio1">Elogie conforme a resposta que o lead der para a pergunta acima.</div>
+    <button class="copy-btn" onclick="copiar('se-a-audio1', this)">📋 Copiar</button>
+  </div>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 2</div>
+    <div class="audio-script" id="se-a-audio2">Te perguntei isso, amigo, porque sou responsável por ajudar a empresa de monitoramento como a sua. Onde eu auxilio elas a implementar uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios aqui nas redes sociais. E, por menos de R$20 por dia, a gente consegue gerar de 100 a 150 novos contatos por mês da sua cidade, da sua região, para o comercial trabalhar de forma ativa. Tá? Logo abaixo eu vou deixar aqui o perfil do meu Instagram para você acessar e dar uma olhada em como a gente realiza esses tipos de ações e prospecções e os conteúdos. Tá?</div>
+    <button class="copy-btn" onclick="copiar('se-a-audio2', this)">📋 Copiar</button>
+  </div>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 3</div>
+    <div class="audio-script" id="se-a-audio3">sobre isso que eu relatei . Você acredita que esse tipo de implementação e trazer volume de novos clientes, de novos contratos, ajudaria no momento atual da sua empresa?</div>
+    <button class="copy-btn" onclick="copiar('se-a-audio3', this)">📋 Copiar</button>
+  </div>
+  <div class="chat-wrap">
+    <div class="bubble-row right"><div class="bubble" id="se-a-perfil-texto">Esse é o perfil do meu instagram pra você verificar:
+https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-a-perfil-texto', this)">📋 Copiar</button></div>
+  </div>
+</div>
+<div id="se-a-depois" hidden>
 <div class="wait-card">⏳ Aguardar resposta</div>
 <div class="wa-interest-wrap">
 <div class="branch-choice">
@@ -1259,33 +1287,67 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-a-nao">Tranquilo, NOME! É porque vocês já estão com a agenda de instalações/equipe lotada na região ou por alguma outra prioridade agora?</div><button class="copy-btn" onclick="copiar('se-wa-a-nao', this)">📋 Copiar</button></div>
 </div>
-</div></div></div>
+</div></div>
+</div></div>
       <div id="se-wa-caminho-b" class="caminho-panel wa-caminho-panel">
 <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-b1">Ahh legal! é que apareceu um conteúdo da NOMEDAEMPRESA no meu Instagram sobre Monitoramento e achei muito bom os conteúdos que vocês trazem pros seus clientes por lá!</div><button class="copy-btn" onclick="copiar('se-wa-b1', this)">📋 Copiar</button></div>
-<div class="bubble-row right"><div class="bubble" id="se-wa-b2">Posso fazer uma pergunta rapidinho?</div><button class="copy-btn" onclick="copiar('se-wa-b2', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-wa-b2">É com você que falo sobre essa parte de conteúdos no instagram? Estou com algumas dúvidas...</div><button class="copy-btn" onclick="copiar('se-wa-b2', this)">📋 Copiar</button></div>
+</div>
+<div class="branch-choice" id="se-wa-b-conteudo-escolha">
+  <button type="button" class="branch-btn sim" onclick="escolherConteudoWa('sim', this)">✅ SIM</button>
+  <button type="button" class="branch-btn nao" onclick="escolherConteudoWa('nao', this)">❌ NÃO</button>
+</div>
+<div id="se-wa-b-conteudo-nao" class="caminho-panel">
+<div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-wa-b-contato">ahh certo, entendi!! Você pode passar o contato do responsável pra eu tirar algumas dúvidas?</div><button class="copy-btn" onclick="copiar('se-wa-b-contato', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
+</div>
+<div id="se-wa-b-conteudo-sim" class="caminho-panel">
 <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-b3">Showw! A minha dúvida era justamente porque vi que vocês já têm um posicionamento muito bom por lá...</div><button class="copy-btn" onclick="copiar('se-wa-b3', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b4">Mas fiquei curioso em saber se isso tem atraído novos clientes/orçamentos ou o principal meio de ter novas vendas é por indicação mesmo?</div><button class="copy-btn" onclick="copiar('se-wa-b4', this)">📋 Copiar</button></div>
-<div class="bubble-row right"><div class="bubble" id="se-wa-b-responsavel">É com você que converso sobre a parte de atração de novos clientes/vendas para @usuariodaempresa ou você pode passar o contato do responsável que cuida disso?😀</div><button class="copy-btn" onclick="copiar('se-wa-b-responsavel', this)">📋 Copiar</button></div>
 </div>
 <div class="wait-card">⏳ Aguardar resposta</div>
-<div class="branch-choice">
-<button type="button" class="branch-btn sim" aria-expanded="false" aria-controls="se-wa-b-ela" onclick="showWhatsAppResponsavel(this)">✅ Se for ela mesma</button>
+<div class="security-channels" role="tablist" aria-label="Forma de envio" style="margin:0 0 14px;justify-content:center">
+  <button type="button" class="security-channel-pill" id="se-b-tab-texto" role="tab" aria-selected="false" onclick="mostrarEnvioWa('se-b', 'texto', this)">💬 Enviar por texto</button>
+  <button type="button" class="security-channel-pill" id="se-b-tab-audio" role="tab" aria-selected="false" onclick="mostrarEnvioWa('se-b', 'audio', this)">🎙️ Enviar por áudio</button>
 </div>
-<div id="se-wa-b-ela" class="caminho-panel">
+<div id="se-b-envio-texto" hidden>
+<div style="background:#fef3c7;border:1px solid #f6e05e;border-left:4px solid #d69e2e;border-radius:8px;padding:10px 14px;margin:0 0 10px;font-size:12.5px;line-height:1.5;color:#744210"><strong>⚠️ Atenção:</strong> elogie conforme a resposta que o lead der para a pergunta acima</div>
 <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-b5">Te perguntei isso amigo, porque sou responsável por ajudar empresas de monitoramento como a sua</div><button class="copy-btn" onclick="copiar('se-wa-b5', this)">📋 Copiar</button></div>
-</div>
-<div class="chat-wrap">
+
 <div class="bubble-row right"><div class="bubble" id="se-wa-b6">Onde auxilio elas a implementarem uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios nas redes sociais</div><button class="copy-btn" onclick="copiar('se-wa-b6', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b7">Por menos de R$20,00 diário, geramos em média 150 novos contatos por mês da sua região pro comercial trabalhar.</div><button class="copy-btn" onclick="copiar('se-wa-b7', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b-foto-legenda">Esse é o perfil do meu instagram:
 https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-wa-b-foto-legenda', this)">📋 Copiar</button></div>
 <div class="bubble-row right"><div class="bubble" id="se-wa-b8">Você acredita que esse tipo de implementação em trazer volume de novos clientes ajudaria no momento atual da sua empresa NOME?</div><button class="copy-btn" onclick="copiar('se-wa-b8', this)">📋 Copiar</button></div>
 </div>
+</div>
+<div id="se-b-envio-audio" hidden>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 1</div>
+    <div class="audio-script" id="se-b-audio1">Elogie conforme a resposta que o lead der para a pergunta acima.</div>
+    <button class="copy-btn" onclick="copiar('se-b-audio1', this)">📋 Copiar</button>
+  </div>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 2</div>
+    <div class="audio-script" id="se-b-audio2">Te perguntei isso, amigo, porque sou responsável por ajudar a empresa de monitoramento como a sua. Onde eu auxilio elas a implementar uma estrutura de captação de novos contratos de monitoramento diariamente pelos anúncios aqui nas redes sociais. E, por menos de R$20 por dia, a gente consegue gerar de 100 a 150 novos contatos por mês da sua cidade, da sua região, para o comercial trabalhar de forma ativa. Tá? Logo abaixo eu vou deixar aqui o perfil do meu Instagram para você acessar e dar uma olhada em como a gente realiza esses tipos de ações e prospecções e os conteúdos. Tá?</div>
+    <button class="copy-btn" onclick="copiar('se-b-audio2', this)">📋 Copiar</button>
+  </div>
+  <div class="audio-card">
+    <div class="audio-header"><div class="audio-icon">🎙️</div>Áudio 3</div>
+    <div class="audio-script" id="se-b-audio3">sobre isso que eu relatei . Você acredita que esse tipo de implementação e trazer volume de novos clientes, de novos contratos, ajudaria no momento atual da sua empresa?</div>
+    <button class="copy-btn" onclick="copiar('se-b-audio3', this)">📋 Copiar</button>
+  </div>
+  <div class="chat-wrap">
+    <div class="bubble-row right"><div class="bubble" id="se-b-perfil-texto">Esse é o perfil do meu instagram pra você verificar:
+https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclick="copiar('se-b-perfil-texto', this)">📋 Copiar</button></div>
+  </div>
+</div>
+<div id="se-b-depois" hidden>
 <div class="wait-card">⏳ Aguardar resposta</div>
 <div class="wa-interest-wrap">
 <div class="branch-choice">
@@ -1311,7 +1373,9 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 <div class="chat-wrap">
 <div class="bubble-row right"><div class="bubble" id="se-wa-b-nao">Tranquilo, NOME! É porque vocês já estão com a agenda de instalações/equipe lotada na região ou por alguma outra prioridade agora?</div><button class="copy-btn" onclick="copiar('se-wa-b-nao', this)">📋 Copiar</button></div>
 </div>
-</div></div></div>
+</div></div>
+</div>
+</div>
 </div>
     </div>
   </div>
@@ -1383,6 +1447,21 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
     document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
     btn.classList.add('selected');
     btn.setAttribute('aria-expanded', 'true');
+  }
+  function mostrarEnvioWa(prefixo, qual, btn) {
+    document.querySelectorAll('#' + prefixo + '-tab-texto, #' + prefixo + '-tab-audio').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.getElementById(prefixo + '-envio-texto').hidden = qual !== 'texto';
+    document.getElementById(prefixo + '-envio-audio').hidden = qual !== 'audio';
+    const depois = document.getElementById(prefixo + '-depois');
+    if (depois) depois.hidden = false;
+  }
+  function escolherConteudoWa(opcao, btn) {
+    document.querySelectorAll('#se-wa-b-conteudo-escolha .branch-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    document.getElementById('se-wa-b-conteudo-sim').classList.toggle('active', opcao === 'sim');
+    document.getElementById('se-wa-b-conteudo-nao').classList.toggle('active', opcao === 'nao');
   }
   function showWhatsAppCaminho(qual, btn) {
     const wrap = document.getElementById('se-channel-whatsapp');
