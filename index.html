@@ -932,6 +932,7 @@ Só para eu entender melhor, qual seria o principal motivo de você acreditar qu
       <button type="button" class="security-channel-pill active" id="se-tab-instagram" role="tab" aria-selected="true" aria-controls="se-channel-instagram" onclick="showSecurityChannel('instagram')">Direct do Instagram</button>
       <button type="button" class="security-channel-pill" id="se-tab-whatsapp" role="tab" aria-selected="false" aria-controls="se-channel-whatsapp" onclick="showSecurityChannel('whatsapp')">Prospecção no WhatsApp</button>
       <button type="button" class="security-channel-pill" id="se-tab-gmaps" role="tab" aria-selected="false" aria-controls="se-channel-gmaps" onclick="showSecurityChannel('gmaps')">Prospecção do Google Maps</button>
+      <button type="button" class="security-channel-pill" id="se-tab-otimizada" role="tab" aria-selected="false" aria-controls="se-channel-otimizada" onclick="showSecurityChannel('otimizada')">Prospecção otimizada</button>
     </div>
     <div id="se-channel-instagram" role="tabpanel" aria-labelledby="se-tab-instagram">
     <div class="aviso-topo" style="background:#ebf8ff;border-color:#90cdf4;color:#2c5282">
@@ -1572,6 +1573,48 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
 </div>
 </div>
     </div>
+    <div id="se-channel-otimizada" data-prefixo="se-ot" role="tabpanel" aria-labelledby="se-tab-otimizada" hidden>
+      <div class="etapa-etiqueta">Etapa 1 — Abertura no WhatsApp</div>
+      <div class="chat-wrap">
+        <div class="bubble-row right">
+          <div class="bubble" id="se-ot-1">Opaa, tudo bem?</div>
+          <button class="copy-btn" onclick="copiar('se-ot-1', this)">📋 Copiar</button>
+        </div>
+        <div class="bubble-row right">
+          <div class="bubble" id="se-ot-2">Mandei uma mensagem no Direct de vocês ontem, mas imagino que lá seja bem movimentado e corrido pra ver.</div>
+          <button class="copy-btn" onclick="copiar('se-ot-2', this)">📋 Copiar</button>
+        </div>
+        <div class="bubble-row right">
+          <div class="bubble" id="se-ot-3">Por aqui é o WhatsApp do comercial ou falo com o proprietário da NOMEDAEMPRESA?</div>
+          <button class="copy-btn" onclick="copiar('se-ot-3', this)">📋 Copiar</button>
+        </div>
+      </div>
+      <div class="wait-card">⏳ Aguardar resposta</div>
+      <div class="branch-choice">
+        <button type="button" class="branch-btn sim" aria-expanded="false" aria-controls="se-ot-caminho-a" onclick="showWhatsAppCaminho('a', this)">✅ Sim, sou eu mesmo (o dono)</button>
+        <button type="button" class="branch-btn nao" aria-expanded="false" aria-controls="se-ot-caminho-b" onclick="showWhatsAppCaminho('b', this)">❌ Não, aqui é a secretária/social media/agência</button>
+      </div>
+<div id="se-ot-caminho-a" class="caminho-panel wa-caminho-panel">
+<div class="etapa-etiqueta">Etapa 2 — Apresentação</div>
+<div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-ot-a1">ahh legal! Vou ser bem direto com você pra não tomar muito do seu tempo NOME!</div><button class="copy-btn" onclick="copiar('se-ot-a1', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-ot-a2">Me chamo Vitória e sou responsável da @trafseg<br><br>Hoje, a gente é a única empresa no Brasil 100% especializada no nicho de segurança eletrônica, e o nosso objetivo principal é fazer com que empresas como a sua, possam aumentem o seu faturamento e recorrência de vendas através da nossa metodologia de anúncios nas redes sociais.<br><br>Você tem interesse em conhecer um pouquinho mais de como funciona o nosso método de captação de novos contratos pra você na sua região?</div><button class="copy-btn" onclick="copiar('se-ot-a2', this)">📋 Copiar</button></div>
+</div>
+<div class="wait-card">⏳ Aguardar resposta</div>
+</div>
+<div id="se-ot-caminho-b" class="caminho-panel wa-caminho-panel">
+<div class="etapa-etiqueta">Etapa 2 — Apresentação</div>
+<div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-ot-b1">ahh legal! Vou ser bem direto com você pra não tomar muito do seu tempo NOME!</div><button class="copy-btn" onclick="copiar('se-ot-b1', this)">📋 Copiar</button></div>
+<div class="bubble-row right"><div class="bubble" id="se-ot-b2">Me chamo Vitória e sou responsável da @trafseg<br><br>Hoje, a gente é a única empresa no Brasil 100% especializada no nicho de segurança eletrônica, e o nosso objetivo principal é fazer com que empresas como a sua, possam aumentem o seu faturamento e recorrência de vendas através da nossa metodologia de anúncios nas redes sociais.<br><br>Você tem interesse em conhecer um pouquinho mais de como funciona o nosso método de captação de novos contratos pra você na sua região?</div><button class="copy-btn" onclick="copiar('se-ot-b2', this)">📋 Copiar</button></div>
+</div>
+<div class="wait-card">⏳ Aguardar resposta</div>
+<div class="chat-wrap">
+<div class="bubble-row right"><div class="bubble" id="se-ot-b3">É com você mesmo que eu converso sobre a captação de novos contratos, ou tem algum responsável com quem eu possa falar? 😄</div><button class="copy-btn" onclick="copiar('se-ot-b3', this)">📋 Copiar</button></div>
+</div>
+<div class="wait-card">⏳ Aguardar resposta</div>
+</div>
+    </div>
   </div>
 
 </div>
@@ -1608,7 +1651,7 @@ https://www.instagram.com/bryan.trafegoseg/</div><button class="copy-btn" onclic
     btn.setAttribute('aria-expanded', 'true');
   }
   function showSecurityChannel(channel) {
-    ['instagram', 'whatsapp', 'gmaps'].forEach(name => {
+    ['instagram', 'whatsapp', 'gmaps', 'otimizada'].forEach(name => {
       const selected = name === channel;
       document.getElementById('se-channel-' + name).hidden = !selected;
       const tab = document.getElementById('se-tab-' + name);
